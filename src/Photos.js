@@ -13,8 +13,13 @@ export default function Photos(props) {
                     href={photo.src.original}
                     target="_blank"
                     className="shadow-sm"
+                    rel="noopener noreferrer"
                   >
-                    <img src={photo.src.tiny} className="img-fluid shadow-sm" />
+                    <img
+                      src={photo.src.tiny}
+                      className="img-fluid shadow-sm"
+                      alt=""
+                    />
                   </a>
                 </div>
               );
