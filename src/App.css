@@ -75,11 +75,11 @@ section {
 }
 
 .imageValid:hover {
-  content: url(sucroze3.png);
+  content: url(../public/images/sucroze3.png);
 }
 
 .imageAsking:hover {
-  content: url(sucroze2.png);
+  content: url(../public/images/sucroze2.png);
 }
 
 .noInfoText {

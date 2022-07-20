@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
-import sucroze1 from "./sucroze1.png";
-import sucroze4 from "./sucroze4.png";
 
 export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
         <section className="shadow-sm">
-          <img className="imageValid" src={sucroze4} alt="" />
+          <img className="imageValid" src="./images/sucroze4.png" alt="" />
         </section>
         <section className="shadow-sm">
           <h2>{props.results.word}</h2>
@@ -37,7 +35,7 @@ export default function Results(props) {
   } else {
     return (
       <section className="shadow-sm">
-        <img className="imageAsking" src={sucroze1} alt="" />
+        <img className="imageAsking" src="./images/sucroze1.png" alt="" />
         <p className="text-center noInfoText">Enter a word</p>
       </section>
     );
