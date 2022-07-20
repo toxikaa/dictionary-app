@@ -43,7 +43,7 @@ export default function Dictionary() {
           />
         </form>
         <p className="suggested text-center">
-          i.e. sunset, wine, yoga, coding, plant, evening, apple...
+          i.e. sunset, wine, yoga, coding, hate, evening, apple...
         </p>
       </section>
       <Results results={results} />

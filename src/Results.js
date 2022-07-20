@@ -13,11 +13,13 @@ export default function Results(props) {
           <h2>{props.results.word}</h2>
           <div className="phoneticsResult">
             {props.results.phonetics.map(function (phonetic, index) {
-              return (
-                <div key={index}>
-                  <Phonetic phonetic={phonetic} />
-                </div>
-              );
+              if (index < 2) {
+                return (
+                  <div key={index}>
+                    <Phonetic phonetic={phonetic} />
+                  </div>
+                );
+              }
             })}
           </div>
         </section>
