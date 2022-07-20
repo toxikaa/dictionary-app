@@ -19,6 +19,8 @@ export default function Results(props) {
                     <Phonetic phonetic={phonetic} />
                   </div>
                 );
+              } else {
+                return null;
               }
             })}
           </div>
