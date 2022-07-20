@@ -1,1 +1,236 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(197, 237, 240) 0%,
+    rgb(239, 221, 225) 78%
+  );
+  font-family: "Ibarra Real Nova", serif;
+}
+.footer {
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+}
+a {
+  text-decoration: none;
+  font-weight: 800;
+  font-family: "Space Grotesk", sans-serif;
+  background: -webkit-linear-gradient(
+    178deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+a:hover {
+  opacity: 0.6;
+}
+header {
+  max-width: 750px;
+  display: block;
+  margin: 15px auto;
+  padding: 20px 0;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  font-size: 55px;
+  background: -webkit-linear-gradient(
+    166deg,
+    rgb(143, 93, 146) 29%,
+    rgb(56, 126, 130) 88%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+section {
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 750px;
+  display: block;
+  margin: 15px auto;
+}
+.Photos img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+
+.imageAsking {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  transition: all 1s ease;
+}
+.imageValid {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  transition: all 2s ease;
+}
+
+.imageValid:hover {
+  content: url(sucroze3.png);
+}
+
+.imageAsking:hover {
+  content: url(sucroze2.png);
+}
+
+.noInfoText {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    166deg,
+    rgb(143, 93, 146) 29%,
+    rgb(56, 126, 130) 88%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form {
+  position: relative;
+  width: 380px;
+  border: 1px solid #6c476e0d;
+  border-radius: 7px;
+  display: block;
+  margin: 0 auto;
+}
+input,
+.formbtn {
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  color: #2c6063;
+}
+input:hover {
+  opacity: 0.6;
+}
+
+h2 {
+  text-transform: capitalize;
+  padding-left: 15px;
+  font-weight: 700;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    166deg,
+    rgb(143, 93, 146) 29%,
+    rgb(56, 126, 130) 88%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.phoneticsResult {
+  font-size: 25px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+audio {
+  max-width: 100px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: transparent;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: #b1d4e0;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: rgba(177, 212, 224, 0.7);
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding: 0 15px;
+  border: 1px solid #4e959886;
+  border-radius: 15px;
+  font-size: 24px;
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-rewind-button,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
+h3 {
+  font-size: 45px;
+  padding: 15px 0;
+}
+.meaningsDef {
+  font-size: 23px;
+}
+.examples {
+  opacity: 0.7;
+  font-size: 22px;
+}
+@media (max-width: 420px) {
+  form {
+    width: 360px;
+  }
+}
+@media (max-width: 400px) {
+  form {
+    width: 300px;
+  }
+}
+@media (max-width: 345px) {
+  form {
+    width: 270px;
+  }
+}
+@media (max-width: 320px) {
+  form {
+    width: 260px;
+  }
+}
+@media (max-width: 300px) {
+  form {
+    width: 240px;
+  }
+}
+@media (max-width: 275px) {
+  form {
+    width: 220px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 260px) {
+  form {
+    width: 200px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
